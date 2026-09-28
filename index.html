@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA Inclusive Learning</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+
+    <div class="brand">
+        <div class="logo">N</div>
+
+        <div>
+            <h2>NOVA</h2>
+            <small>INCLUSIVE LEARNING</small>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#tools">Tools</a>
+        <a href="#workspace">Translator</a>
+        <a href="#accessibility">Accessibility</a>
+    </nav>
+
+    <button id="accessibilityBtn">
+        ♿ Accessibility
+    </button>
+
+</header>
+
+
+<!-- HERO -->
+
+<section id="home" class="hero">
+
+    <div class="badge">
+        ● AI POWERED INCLUSIVE LEARNING
+    </div>
+
+    <h1>
+        Learning Without
+        <span>Barriers.</span>
+    </h1>
+
+    <p>
+        NOVA combines speech, translation, text-to-speech
+        and accessibility tools to create a more inclusive
+        learning experience.
+    </p>
+
+    <div class="hero-buttons">
+
+        <a href="#workspace" class="primary">
+            Start Learning →
+        </a>
+
+        <button id="heroSpeech" class="secondary">
+            🎙 Speak
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURES -->
+
+<section id="tools" class="section">
+
+    <div class="heading">
+
+        <span>LEARNING TOOLS</span>
+
+        <h2>
+            Everything you need to
+            <strong>learn your way.</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon purple">
+                🎙
+            </div>
+
+            <h3>
+                Speech to Text
+            </h3>
+
+            <p>
+                Convert your voice into written learning
+                notes instantly.
+            </p>
+
+            <button id="speechTool">
+                Start Speaking →
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon blue">
+                🔊
+            </div>
+
+            <h3>
+                Text to Speech
+            </h3>
+
+            <p>
+                Listen to your study material instead of
+                reading everything manually.
+            </p>
+
+            <button id="readTool">
+                Read Aloud →
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon green">
+                🌍
+            </div>
+
+            <h3>
+                Language Translation
+            </h3>
+
+            <p>
+                Translate educational content into
+                multiple languages.
+            </p>
+
+            <button id="translationTool">
+                Open Translator →
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <div class="icon orange">
+                ♿
+            </div>
+
+            <h3>
+                Accessibility
+            </h3>
+
+            <p>
+                Customize font size, contrast and
+                reading experience.
+            </p>
+
+            <button id="accessTool">
+                Customize →
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- WORKSPACE -->
+
+<section id="workspace" class="workspace-section">
+
+    <div class="workspace">
+
+        <div class="workspace-title">
+
+            <div>
+
+                <span>NOVA WORKSPACE</span>
+
+                <h2>
+                    Accessible Learning Studio
+                </h2>
+
+            </div>
+
+            <div class="ready">
+                <i></i>
+                System Ready
+            </div>
+
+        </div>
+
+
+        <div class="workspace-grid">
+
+
+            <!-- INPUT -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <span>
+                        LEARNING CONTENT
+                    </span>
+
+                    <button id="clearBtn">
+                        Clear
+                    </button>
+
+                </div>
+
+
+                <textarea
+                    id="inputText"
+                    placeholder="Type or paste your learning material here..."
+                ></textarea>
+
+
+                <div class="panel-footer">
+
+                    <span id="wordCount">
+                        0 words
+                    </span>
+
+                    <button id="listenBtn">
+                        🔊 Listen
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- TRANSLATOR -->
+
+            <div class="panel">
+
+                <div class="panel-header">
+
+                    <span>
+                        TRANSLATION
+                    </span>
+
+                    <span class="ai">
+                        ● NOVA ENGINE
+                    </span>
+
+                </div>
+
+
+                <div class="language-row">
+
+                    <select id="fromLanguage">
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="te">
+                            Telugu
+                        </option>
+
+                        <option value="hi">
+                            Hindi
+                        </option>
+
+                        <option value="ta">
+                            Tamil
+                        </option>
+
+                        <option value="kn">
+                            Kannada
+                        </option>
+
+                        <option value="ml">
+                            Malayalam
+                        </option>
+
+                        <option value="fr">
+                            French
+                        </option>
+
+                        <option value="de">
+                            German
+                        </option>
+
+                        <option value="es">
+                            Spanish
+                        </option>
+
+                    </select>
+
+
+                    <button id="swapBtn">
+                        ⇄
+                    </button>
+
+
+                    <select id="toLanguage">
+
+                        <option value="te">
+                            Telugu
+                        </option>
+
+                        <option value="en">
+                            English
+                        </option>
+
+                        <option value="hi">
+                            Hindi
+                        </option>
+
+                        <option value="ta">
+                            Tamil
+                        </option>
+
+                        <option value="kn">
+                            Kannada
+                        </option>
+
+                        <option value="ml">
+                            Malayalam
+                        </option>
+
+                        <option value="fr">
+                            French
+                        </option>
+
+                        <option value="de">
+                            German
+                        </option>
+
+                        <option value="es">
+                            Spanish
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div id="translationResult" class="result">
+
+                    <div class="empty">
+
+                        <div>✦</div>
+
+                        <p>
+                            Your translated text will appear here
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="translation-actions">
+
+                    <button id="translateBtn" class="translate">
+                        Translate with NOVA →
+                    </button>
+
+                    <button id="copyBtn" class="copy">
+                        📋 Copy
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- SPEECH -->
+
+<section class="speech-section">
+
+    <div class="speech-card">
+
+        <div class="microphone">
+            🎙
+        </div>
+
+        <div>
+
+            <span>SPEECH ASSISTANT</span>
+
+            <h2>
+                Speak.
+                <strong>NOVA writes.</strong>
+            </h2>
+
+            <p>
+                Use your voice to create notes,
+                answer questions or capture lectures.
+            </p>
+
+            <button id="startSpeech" class="primary">
+                🎙 Start Speech Recognition
+            </button>
+
+            <p id="speechStatus">
+                Ready to listen
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ACCESSIBILITY -->
+
+<section id="accessibility" class="section">
+
+    <div class="heading">
+
+        <span>ACCESSIBILITY CENTER</span>
+
+        <h2>
+            Make learning
+            <strong>comfortable.</strong>
+        </h2>
+
+    </div>
+
+
+    <div class="access-grid">
+
+
+        <div class="access-card">
+
+            <div class="access-icon">
+                A+
+            </div>
+
+            <h3>
+                Text Size
+            </h3>
+
+            <p>
+                Increase or decrease text size.
+            </p>
+
+            <div class="buttons">
+
+                <button id="smallText">
+                    A−
+                </button>
+
+                <button id="normalText">
+                    A
+                </button>
+
+                <button id="largeText">
+                    A+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="access-card">
+
+            <div class="access-icon">
+                ◐
+            </div>
+
+            <h3>
+                High Contrast
+            </h3>
+
+            <p>
+                Improve visibility for low vision users.
+            </p>
+
+            <button id="contrastBtn">
+                Enable
+            </button>
+
+        </div>
+
+
+        <div class="access-card">
+
+            <div class="access-icon">
+                Aa
+            </div>
+
+            <h3>
+                Reading Mode
+            </h3>
+
+            <p>
+                Improve readability of text.
+            </p>
+
+            <button id="readingBtn">
+                Enable
+            </button>
+
+        </div>
+
+
+        <div class="access-card">
+
+            <div class="access-icon">
+                ◉
+            </div>
+
+            <h3>
+                Focus Mode
+            </h3>
+
+            <p>
+                Reduce visual distractions.
+            </p>
+
+            <button id="focusBtn">
+                Enable
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>NOVA</strong>
+
+    <span>
+        Inclusive Learning Technologies
+    </span>
+
+    <span>
+        Hackathon 2026
+    </span>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
